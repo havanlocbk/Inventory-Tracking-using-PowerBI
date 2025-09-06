@@ -1,10 +1,20 @@
 # 📊 How to Optimize Inventory Levels – Supply Chain & Operations – Power BI
+---
 
-Author: Loc Ha
+Built interactive Power BI dashboards to track inventory levels, identify stock shortages, and optimize warehouse operations for better decision-making for AdventureWorks2022 Database.
+---
 
-Date: 2025-06-18
 
-Tools Used: SQL Server (AdventureWorks2022), Power Query, DAX, Power BI
+📝Author: Loc Ha
+
+📅Date: 2025-06-18
+
+<!-- Tools Used -->
+![DB: SQL Server](https://img.shields.io/badge/DB-SQL%20Server-CC2927?logo=microsoftsqlserver&logoColor=white&style=flat)
+![BI: Power BI](https://img.shields.io/badge/BI-Power%20BI-F2C811?logo=powerbi&logoColor=black&style=flat)
+![Language: DAX](https://img.shields.io/badge/Language-DAX-0E76A8?style=flat)
+![ETL: Power Query](https://img.shields.io/badge/ETL-Power%20Query-3178C6?style=flat)
+![Focus: Data Analytics](https://img.shields.io/badge/Focus-Data%20Analytics-FF6F3D?style=flat)
 
 
 ---
@@ -21,14 +31,14 @@ Tools Used: SQL Server (AdventureWorks2022), Power Query, DAX, Power BI
 
 ## 📌 Background & Overview
 
-### Objective
+### 🎯 Objective
 
 * Provide stakeholders with a comprehensive and easy-to-understand picture of warehouse inventory.
 * Track and control inventory levels across multiple locations.
 * Identify products that are out-of-stock, below reorder point, or at safety stock level.
 * Support decision-making for warehouse managers, sales, and marketing teams.
 
-### Stakeholders
+### 📺 Stakeholders
 
 ✔️ Warehouse managers & staff – ensure inventory meets required thresholds.
 
@@ -40,13 +50,13 @@ Tools Used: SQL Server (AdventureWorks2022), Power Query, DAX, Power BI
 
 ## 📂 Dataset Description & Data Structure
 
-### Data Source
+### 💻 Data Source
 
 * **Source**: AdventureWorks2022 (imported from SQL Express).
 * **Format**: Relational database (SQL Server).
 * **Tables Used**: Product, ProductInventory, ProductCategory, ProductSubcategory, Sales, Calendar, Production tables.
 
-### Data Model (ERD)
+### ⚙️ Data Model (ERD)
 
 * The model connects product information with sales, inventory, and production data.
 * Key tables: `Dim_Product`, `Dim_ProductInventory`, `Fact_Sales`, `Dim_Calendar`, `Production_WorkOrder`, `Production_Location`.
