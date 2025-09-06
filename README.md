@@ -1,8 +1,11 @@
-# 📊 Project Title: How to Optimize Inventory Levels – Supply Chain & Operations – Power BI
+# 📊 How to Optimize Inventory Levels – Supply Chain & Operations – Power BI
 
 Author: Loc Ha
+
 Date: 2025-06-18
+
 Tools Used: SQL Server (AdventureWorks2022), Power Query, DAX, Power BI
+
 
 ---
 
@@ -28,7 +31,9 @@ Tools Used: SQL Server (AdventureWorks2022), Power Query, DAX, Power BI
 ### Stakeholders
 
 ✔️ Warehouse managers & staff – ensure inventory meets required thresholds.
+
 ✔️ Sales & marketing teams – align sales campaigns with available stock.
+
 ✔️ Decision-makers – optimize operations and reduce costs.
 
 ---
@@ -55,8 +60,11 @@ Tools Used: SQL Server (AdventureWorks2022), Power Query, DAX, Power BI
 ## 🧠 Design Thinking Process
 
 1️⃣ **Empathize** – Understand warehouse managers’ and sales teams’ needs for monitoring stock levels.
+
 2️⃣ **Define** – Problem: lack of visibility into stock status leads to overstocking or stockouts.
+
 3️⃣ **Ideate** – Brainstorm KPIs: Total Inventory, Products Below Reorder Point, Out-of-Stock %, Turnover.
+
 4️⃣ **Prototype & Review** – Build Power BI dashboards with key metrics, validate with stakeholders, refine.
 
 
@@ -66,7 +74,9 @@ Tools Used: SQL Server (AdventureWorks2022), Power Query, DAX, Power BI
 ## ⚒️ Main Process
 
 1️⃣ **Data Cleaning & Preprocessing** – Use Power Query to transform AdventureWorks tables.
+
 2️⃣ **Exploratory Data Analysis** – Review stock distribution by category, location, and time.
+
 3️⃣ **DAX Measures** – Key examples:
 
 ```DAX
@@ -80,8 +90,8 @@ Inventory Δ% by Month = VAR CurrentInventory = [Total Inventory Quantity]
 VAR PrevInventory = CALCULATE([Total Inventory Quantity], DATEADD(Dim_Calendar[Date], -1, MONTH))
 RETURN DIVIDE(CurrentInventory - PrevInventory, PrevInventory)
 ```
-
 4️⃣ **Power BI Visualization** – Build 3 dashboards: Overview, Inventory vs Sales, Reorder Point Analysis.
+
 
 ---
 
@@ -124,10 +134,15 @@ RETURN DIVIDE(CurrentInventory - PrevInventory, PrevInventory)
 ## 🔎 Final Conclusion & Recommendations
 
 📌 **Key Takeaways**
+
 ✔️ Majority of SKUs (\~80%) are below reorder point → urgent restocking required.
+
 ✔️ Bikes consume the largest share of inventory but turn over slowly.
+
 ✔️ Accessories & Clothing are understocked despite demand, risking lost revenue.
+
 ✔️ Inventory turnover (4.66) needs benchmarking against industry standards.
+
 ✔️ Stock allocation across warehouses is unbalanced.
 
 📌 **Recommendations**
